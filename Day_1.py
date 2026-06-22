@@ -25,3 +25,17 @@ for i in range(len(x)):
 
 for index,elem in enumerate(x):
     print(f"Index: {index}, Value: {elem}")
+
+
+
+# Question 1 Two sum on neetcode 150
+
+class solution:
+  def twoSum(self, nums: List[int]m target : int) -? list[int]:
+    seen = {}
+    for index,num in enumerate(nums):
+      diff = target - num
+      if diff in seen:
+        print([seen[diff], index)
+      else:
+        print([index])
